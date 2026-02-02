@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartQUEUE AI | Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-flex">
+            <div class="logo">Smart<span>QUEUE</span> AI</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#queue-status">Queue Status</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <h1 class="fade-in">SmartQUEUE AI</h1>
+            <p class="fade-in">AI-Based Smart Queue & Appointment Prediction System</p>
+            <a href="#queue-status" class="btn fade-in">Check Queue Status</a>
+        </div>
+    </header>
+
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Step 1</h3>
+                    <p>User takes a digital token or books an appointment via the portal.</p>
+                </div>
+                <div class="step-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Step 2</h3>
+                    <p>System tracks the live queue flow and service rate in real-time.</p>
+                </div>
+                <div class="step-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Step 3</h3>
+                    <p>Our AI predicts the exact waiting time based on historical data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="queue-status" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Check Your Status</h2>
+            <div class="prediction-container">
+                <div class="input-group">
+                    <label for="tokenNumber">Token Number</label>
+                    <input type="number" id="tokenNumber" placeholder="e.g. 105">
+                </div>
+                <div class="input-group">
+                    <label for="serviceType">Service Type</label>
+                    <select id="serviceType">
+                        <option value="5">General Inquiry (Fast)</option>
+                        <option value="15">Account Consulting (Medium)</option>
+                        <option value="30">Technical Support (Detailed)</option>
+                    </select>
+                </div>
+                <button id="predictBtn" class="btn">Predict Wait Time</button>
+
+                <div id="resultArea" class="result-card hidden">
+                    <div class="result-item">
+                        <span class="label">Current Position:</span>
+                        <span id="posValue" class="value">--</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Estimated Wait:</span>
+                        <span id="timeValue" class="value">--</span>
+                    </div>
+                    <p class="disclaimer">AI prediction based on current service rate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="innovation" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Innovations</h2>
+            <div class="innovation-flex">
+                <div class="inn-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Smart Prediction</h4>
+                    <p>Uses deep learning to adjust wait times based on staff efficiency.</p>
+                </div>
+                <div class="inn-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Remote Waiting</h4>
+                    <p>Reduces physical crowding by allowing users to wait anywhere.</p>
+                </div>
+                <div class="inn-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Efficiency</h4>
+                    <p>Optimizes resource allocation for service providers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SmartQUEUE AI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
